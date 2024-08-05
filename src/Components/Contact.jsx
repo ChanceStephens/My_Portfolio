@@ -1,13 +1,17 @@
 import React from 'react';
-
+import louve from '../images/louve.jpg'
+import linkedin from '../images/linkedin.png'
+import github from '../images/github.png'
 export default function Contact() {
 
     return(
         <div className='contact'>
-            <h1>Contact Me</h1>
-            <a href="https://github.com/ChanceStephens/VSchool">Check out my projects on GitHub</a>
-            <a href="chance.stephens2022+portfolio@gmail.com">Email Me</a>
-            <a href="702.721.****">Call Me</a>
+            {/* <h1>Contact Me</h1> */}
+            <img src={louve} />
+            <a href="https://www.linkedin.com/in/chancestephens/"><img src={linkedin}/></a>
+            <a href="https://github.com/ChanceStephens"><img src={github}/></a>
+            
+            
         </div>
     )
 }

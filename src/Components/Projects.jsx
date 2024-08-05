@@ -6,7 +6,7 @@ export default function Projects() {
 
     return(
         <div className='myProjects'>
-            <h1>Meme Generator</h1>
+            {/* <h1>Meme Generator</h1>
             <div className='myProjectInnerContainer'>
                 <p>"Memer's Paradise: A React-powered meme generator where users can easily add custom captions to pre-loaded images, fostering creativity and humor in meme creation."</p>
             </div>
@@ -17,7 +17,7 @@ export default function Projects() {
             <div className='imageContainer'>
                 <img src={memeCollectionImage} />
                 <p>As a user, you can save your memes to a collection where you can edit or delete them.</p>
-            </div>
+            </div> */}
 
         </div>
     )
