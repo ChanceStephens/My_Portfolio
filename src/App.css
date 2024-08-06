@@ -1,117 +1,35 @@
-/* * {
+* {
   color: white;
-  margin:0;
-  
-}
-html {
-  height: 100%;
-}
-body {
-  width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   background-image: url(./images/portfolio-background.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;  
 }
+
 #root {
   display: flex;
   justify-content: flex-start; 
-  align-items: start; 
+  align-items: flex-start; 
   width: 100%;
   height: 100%;
   overflow-y: auto;
 }
 
-.goldenCircle {
-  border: wheat groove 5px;
-  border-radius: 20px;
-  width: 25%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1.8rem;
-  padding: 30px;
-  background-color: rgba(0,0,0,0.6);
-  z-index: -1;
-  position: fixed;
-  top: 80px; 
-  left: 60px; 
-}
-.goldenCircle>p, .goldenCircle>h1, .goldenCircle>h2 {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 70%;
-  position: fixed;
-  font-size: 2.8rem;
-}
-
-.link-home{
-  margin-right: 15%;
-  margin-bottom: ;
-  position: relative; 
-  transform: rotate(348deg); 
-}
-.link-projects{
-  margin-right: 15%;
-  margin-top: -5px;
-  position: relative; 
-  transform: rotate(358deg); 
-}
-.link-about{
-  margin-right: 18%;
-  margin-top: 10px;
-  position: relative; 
-  transform: rotate(345deg); 
-}
-.link-contact{
-  margin-right: 18%;
-  margin-top: 5%;
-  position: relative; 
-  transform: rotate(1deg); 
-} */
-
-
-
-/* Media queries for responsiveness */
-
-/* Small devices (phones, 320px and up) */
-@media (max-width: 320px) {
-* {
-  color: white;
-  margin:0;
-  
-}
-html {
-  height: 100%;
-}
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-image: url(./images/portfolio-background.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;  
-}
-.goldenCircle {
+.goldenCircle, .aboutMe, .contact, .projects {
   border: wheat groove 2px;
   border-radius: 20px;
   width: 35%;
@@ -124,25 +42,27 @@ body {
   padding: 6px;
   background-color: rgba(0,0,0,0.6);
   z-index: -1;
-  position:fixed;
+  position: fixed;
   margin-left: 180px;
   margin-top: 10px;
 }
-.goldenCircle>img {
+
+.goldenCircle>img, .aboutMe>img, .contact>img, .projects>img, .contact>a>img {
   width: 100%;
   border-radius: 15%;
 }
-.goldenCircle>p  {
+
+.goldenCircle>p, .goldenCircle>h1, .whoAmI, .aboutMe>h1, .contact>h1 {
   font-size: .5rem;
   margin-top: 6px;
 }
+
 .goldenCircle>h1 {
   font-size: .6rem;
-  margin-top: 6px;
 }
-.whoAmI {
-  font-size: .5rem;
-  margin-top: 6px;
+
+.contact>h1 {
+  font-size: .8rem;
 }
 
 nav {
@@ -154,28 +74,27 @@ nav {
   height: 70%;
   position: fixed;
   font-size: .7rem;
-  margin-left:82px;
+  margin-left: 82px;
 }
 
 .link-home, .link-projects, .link-about, .link-contact {
   text-shadow: 
-  -.35px -.35px 0 #000,  
-  .35px -.35px 0 #000,
-  -.35px  .35px 0 #000,
-  .35px  .35px 0 #000; 
+    -.35px -.35px 0 #000,  
+    .35px -.35px 0 #000,
+    -.35px  .35px 0 #000,
+    .35px  .35px 0 #000; 
 }
 
-.link-home{
+.link-home {
   margin-left: 28px;
   margin-top: 23px;
   position: relative; 
   transform: rotate(345deg); 
   color: deeppink;
   font-weight: bold;
-  ;
 }
 
-.link-projects{
+.link-projects {
   margin-left: -5px;
   margin-top: -7px;
   position: relative; 
@@ -183,7 +102,8 @@ nav {
   color: rgb(47, 0, 255);
   font-weight: bold; 
 }
-.link-about{
+
+.link-about {
   margin-left: 4px;
   margin-top: 13px;
   position: relative; 
@@ -191,7 +111,8 @@ nav {
   color: rgb(203, 231, 0);
   font-weight: bold; 
 }
-.link-contact{
+
+.link-contact {
   margin-left: 1px;
   margin-bottom: 9px;
   position: relative; 
@@ -200,67 +121,7 @@ nav {
   font-weight: bold; 
 }
 
-.aboutMe {
-  border: wheat groove 2px;
-  border-radius: 20px;
-  width: 35%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: .4rem;
-  padding: 6px;
-  background-color: rgba(0,0,0,0.6);
-  z-index: -1;
-  position:fixed;
-  margin-left: 180px;
-  margin-top: 10px;
-
-}
-.aboutMe>img {
-  width: 100%;
-  border-radius: 15%;
-}
-
-.aboutMe>h1 {
-  font-size: .5rem;
-  margin-top: 3px;
-}
-
-.contact {
-  border: wheat groove 2px;
-  border-radius: 20px;
-  width: 35%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  font-size: .5rem;
-  padding: 6px;
-  background-color: rgba(0,0,0,0.6);
-  z-index: -1;
-  position:fixed;
-  margin-left: 180px;
-  margin-top: 10px;
-}
-
-.contact>img {
-width: 100%;
-border-radius: 15%;
-position: relative;
-}
-.contact>h1 {
-  font-size: .8rem;
-  margin-top: 3px;
-}
-.contact>a>img {
-  width: 100%;
-  border-radius: 15%;
-  position: relative;
-}
-}
+/* } */
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   
@@ -269,11 +130,197 @@ position: relative;
 /* Large devices (desktops, 1024px and up) */
 @media (min-width: 1024px) {
   
+  .goldenCircle, .aboutMe, .contact, .projects {
+    margin-left: 900px;
+    margin-top: 50px;
+    border-radius: 50px;
+    
+  }
+  
+  .goldenCircle>img, .aboutMe>img, .contact>img, .projects>img, .contact>a>img {
+    width: 300px;
+  }
+  
+  .goldenCircle>p, .goldenCircle>h1, .whoAmI, .aboutMe>h1, .contact>h1 {
+    font-size: 2.2rem;
+  }
+  
+  .goldenCircle>h1 {
+    
+  }
+  
+  .aboutMe>p {
+    font-size: 1.5rem;
+  }
+
+  .contact>h1 {
+    
+  }
+  
+  nav {
+    
+  }
+  
+  .link-home, .link-projects, .link-about, .link-contact {
+    font-size: 2rem;
+  }
+  
+  .link-home {
+    margin-left: 550px;
+    margin-top: 70px;
+  }
+  
+  .link-projects {
+    margin-left: 425px;
+    /* margin-top: 10px; */
+    margin-bottom: 30px;
+  }
+  
+  .link-about {
+    margin-left: 500px;
+    margin-bottom: 20px;
+  }
+  
+  .link-contact {
+    margin-left: 450px;
+    margin-bottom: 30px;
+  }
+  
 }
 
 /* Extra large devices (large desktops, 1440px and up) */
 @media (min-width: 1440px) {
   
+  .goldenCircle, .aboutMe, .contact, .projects {
+    margin-left: 1200px;
+    margin-top: 50px;
+    border-radius: 50px;
+    padding: 20px;
+  }
+  
+  .aboutMe>img, .contact>img, .projects>img, .contact>a>img {
+    width: 300px;
+  }
+  .goldenCircle>img {
+    width: 560px;
+  }
+  
+  .goldenCircle>p, .goldenCircle>h1, .whoAmI, .aboutMe>h1, .contact>h1 {
+    font-size: 2rem;
+  }
+  
+  .goldenCircle>h1 {
+    
+  }
+  
+  .aboutMe>p {
+    font-size: 1.7rem;
+  }
+
+  .contact>h1 {
+    
+  }
+  
+  nav {
+    
+  }
+  
+  .link-home, .link-projects, .link-about, .link-contact {
+    text-shadow: 
+    -1.2px -1.2px 0 #000,  
+    1.2px -1.2px 0 #000,
+    -1.2px  1.2px 0 #000,
+    1.2px  1.2px 0 #000; 
+    font-size: 2rem;
+  }
+  
+  .link-home {
+    margin-left: 850px;
+    margin-top: 70px;
+  }
+  
+  .link-projects {
+    margin-left: 725px;
+    /* margin-top: 10px; */
+    margin-bottom: 30px;
+  }
+  
+  .link-about {
+    margin-left: 800px;
+    margin-bottom: 20px;
+  }
+  
+  .link-contact {
+    margin-left: 750px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+    
+  .goldenCircle, .aboutMe, .contact, .projects {
+    margin-left: 1600px;
+    margin-top: 50px;
+    border-radius: 50px;
+    padding: 20px;
+  }
+  
+  .aboutMe>img, .contact>img, .projects>img, .contact>a>img {
+    width: 380px;
+  }
+  .goldenCircle>img {
+    width: 560px;
+  }
+  
+  .goldenCircle>p, .goldenCircle>h1, .whoAmI, .aboutMe>h1, .contact>h1 {
+    font-size: 2rem;
+  }
+  
+  .goldenCircle>h1 {
+    
+  }
+  
+  .aboutMe>p {
+    font-size: 1.7rem;
+  }
+
+  .contact>h1 {
+    
+  }
+  
+  nav {
+    
+  }
+  
+  .link-home, .link-projects, .link-about, .link-contact {
+    text-shadow: 
+    -1.2px -1.2px 0 #000,  
+    1.2px -1.2px 0 #000,
+    -1.2px  1.2px 0 #000,
+    1.2px  1.2px 0 #000; 
+    font-size: 2.5rem;
+  }
+  
+  .link-home {
+    margin-left: 1150px;
+    margin-top: -30px;
+  }
+  
+  .link-projects {
+    margin-left: 1025px;
+    /* margin-top: 10px; */
+    margin-bottom: 60px;
+  }
+  
+  .link-about {
+    margin-left: 1100px;
+    margin-bottom: 20px;
+  }
+  
+  .link-contact {
+    margin-left: 1050px;
+    margin-bottom: -10px;
+  }
 }
 .sample {
   border: red solid 5px;
