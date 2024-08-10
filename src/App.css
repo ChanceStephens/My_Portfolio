@@ -5,339 +5,215 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-image: url(./images/portfolio-background.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;  
-}
-
 #root {
   display: flex;
-  justify-content: flex-start; 
-  align-items: flex-start; 
+  justify-content: center; 
+  align-items: start; 
   width: 100%;
-  height: 100%;
-  overflow-y: auto;
+  /* height: 100%; */
+  /* padding: 10px; */
+  width: 100%;
+  background-image: url(./images/new-portfolio-background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+  background-position: center;
+  /* position: absolute; */
+  /* background-position-x: -1450px; */
 }
 
-.goldenCircle, .aboutMe, .contact, .projects {
-  border: wheat groove 2px;
-  border-radius: 20px;
-  width: 35%;
-  height: 90%;
+.content-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content:center;
   align-items: center;
-  font-size: .5rem;
-  padding: 6px;
-  background-color: rgba(0,0,0,0.6);
-  z-index: -1;
-  position: fixed;
-  margin-left: 180px;
-  margin-top: 10px;
-}
-
-.goldenCircle>img, .aboutMe>img, .contact>img, .projects>img, .contact>a>img {
   width: 100%;
-  border-radius: 15%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* padding: 10px; */
+  /* border-radius: 10px; */
+  /* overflow-y: auto; */
+  /* max-height: 463px; */
+  /* border: ridge 5px burlywood; */
+  
 }
 
-.goldenCircle>p, .goldenCircle>h1, .whoAmI, .aboutMe>h1, .contact>h1 {
-  font-size: .5rem;
-  margin-top: 6px;
+.content-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
-.goldenCircle>h1 {
-  font-size: .6rem;
+img {
+  width: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+  border-top: 1px solid rgb(83, 244, 255);
+  border-bottom: 1px solid rgb(243, 228, 160);
 }
 
-.contact>h1 {
-  font-size: .8rem;
-}
-
-nav {
+a {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 70%;
-  position: fixed;
-  font-size: .7rem;
-  margin-left: 82px;
+}
+.content-container > a > img {
+  width: 90%;
 }
 
-.link-home, .link-projects, .link-about, .link-contact {
-  text-shadow: 
-    -.35px -.35px 0 #000,  
-    .35px -.35px 0 #000,
-    -.35px  .35px 0 #000,
-    .35px  .35px 0 #000; 
+.content-container > h1, .content-container > h4, .content-container > p, .back-to-projects-link {
+  margin: 10px;
+  border-top: 1px solid rgb(83, 244, 255);
+  border-bottom: 1px solid rgb(243, 228, 160);
+  border-radius: 10px;
+  padding: 10px;
+  width: 90%;
+  text-align: center;
+  background-color: rgba(198, 252, 252, 0.274);
 }
 
-.link-home {
-  margin-left: 28px;
-  margin-top: 23px;
-  position: relative; 
-  transform: rotate(345deg); 
-  color: deeppink;
+.content-container > h1 {
+  font-size:1.8rem;
+}
+.content-container > h4, .back-to-projects-link {
+  font-size: 1.2rem;
+}
+
+.content-container > p {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+span {
   font-weight: bold;
+  border-bottom: solid 1px white;
+  font-size: 1.4rem;
 }
 
-.link-projects {
-  margin-left: -5px;
-  margin-top: -7px;
-  position: relative; 
-  transform: rotate(358deg);
-  color: rgb(47, 0, 255);
-  font-weight: bold; 
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  font-size: 1.2rem;
 }
 
-.link-about {
-  margin-left: 4px;
-  margin-top: 13px;
-  position: relative; 
-  transform: rotate(355deg);
-  color: rgb(203, 231, 0);
-  font-weight: bold; 
+.nav-home, .nav-about, .nav-projects, .nav-contact {
+  display: flex;
+  color: transparent;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
 }
 
-.link-contact {
-  margin-left: 1px;
-  margin-bottom: 9px;
-  position: relative; 
-  transform: rotate(1deg);
-  color: rgb(72, 255, 0);
-  font-weight: bold; 
-}
-
-/* } */
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  
-}
-
-/* Large devices (desktops, 1024px and up) */
-@media (min-width: 1024px) {
-  
-  .goldenCircle, .aboutMe, .contact, .projects {
-    margin-left: 900px;
-    margin-top: 50px;
-    border-radius: 50px;
-    
+@media screen and (min-width: 1024px) {
+  #root {
   }
-  
-  .goldenCircle>img, .aboutMe>img, .contact>img, .projects>img, .contact>a>img {
-    width: 300px;
-  }
-  
-  .goldenCircle>p, .goldenCircle>h1, .whoAmI, .aboutMe>h1, .contact>h1 {
-    font-size: 2.2rem;
-  }
-  
-  .goldenCircle>h1 {
-    
-  }
-  
-  .aboutMe>p {
-    font-size: 1.5rem;
+  .content-container {
+    width: 80%;
+    background-color: transparent;
+    height: 100%;
+    overflow-y: auto;
   }
 
-  .contact>h1 {
-    
+  .content-container > h1, .content-container > h4, .content-container > p, .back-to-projects-link {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .content-container > h1 {
+    font-size:3rem;
+  }
+  .content-container > h4, .back-to-projects-link{
+    font-size:2rem;
   }
   
-  nav {
-    
+  .content-container > p {
+    font-size: 1.8rem;
+    text-align: left;
   }
-  
-  .link-home, .link-projects, .link-about, .link-contact {
+
+  span {
+    font-weight: bold;
+    border-bottom: solid 1px white;
     font-size: 2rem;
   }
-  
-  .link-home {
-    margin-left: 550px;
-    margin-top: 70px;
-  }
-  
-  .link-projects {
-    margin-left: 425px;
-    /* margin-top: 10px; */
-    margin-bottom: 30px;
-  }
-  
-  .link-about {
-    margin-left: 500px;
-    margin-bottom: 20px;
-  }
-  
-  .link-contact {
-    margin-left: 450px;
-    margin-bottom: 30px;
-  }
-  
-}
 
-/* Extra large devices (large desktops, 1440px and up) */
-@media (min-width: 1440px) {
-  
-  .goldenCircle, .aboutMe, .contact, .projects {
-    margin-left: 1200px;
-    margin-top: 50px;
-    border-radius: 50px;
-    padding: 20px;
-  }
-  
-  .aboutMe>img, .contact>img, .projects>img, .contact>a>img {
-    width: 300px;
-  }
-  .goldenCircle>img {
-    width: 560px;
-  }
-  
-  .goldenCircle>p, .goldenCircle>h1, .whoAmI, .aboutMe>h1, .contact>h1 {
-    font-size: 2rem;
-  }
-  
-  .goldenCircle>h1 {
-    
-  }
-  
-  .aboutMe>p {
-    font-size: 1.7rem;
+  .icon-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
-  .contact>h1 {
-    
+  img {
+    width: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+    border-top: 1px solid rgb(83, 244, 255);
+    border-bottom: 1px solid rgb(243, 228, 160);
   }
-  
-  nav {
-    
+
+  a > img {
+
   }
-  
-  .link-home, .link-projects, .link-about, .link-contact {
-    text-shadow: 
-    -1.2px -1.2px 0 #000,  
-    1.2px -1.2px 0 #000,
-    -1.2px  1.2px 0 #000,
-    1.2px  1.2px 0 #000; 
-    font-size: 2rem;
-  }
-  
-  .link-home {
-    margin-left: 850px;
-    margin-top: 70px;
-  }
-  
-  .link-projects {
-    margin-left: 725px;
-    /* margin-top: 10px; */
-    margin-bottom: 30px;
-  }
-  
-  .link-about {
-    margin-left: 800px;
-    margin-bottom: 20px;
-  }
-  
-  .link-contact {
-    margin-left: 750px;
-    margin-bottom: 30px;
+
+  .project-image {
+    width: 90%;
+    }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    /* position: fixed;
+    left: 1150px;
+    top: 450px; */
+    position: fixed; /* Ensure the nav-links remain fixed on the page */
+    top: 52vh; /* Adjust this value to place the nav-links vertically */
+    left: 76vw; /* Adjust this value to place the nav-links horizontally */
+    width: 15vw;
+    height: 25vh;
   }
 }
 
-@media (min-width: 1440px) {
-    
-  .goldenCircle, .aboutMe, .contact, .projects {
-    margin-left: 1600px;
-    margin-top: 50px;
-    border-radius: 50px;
-    padding: 20px;
-  }
-  
-  .aboutMe>img, .contact>img, .projects>img, .contact>a>img {
-    width: 380px;
-  }
-  .goldenCircle>img {
-    width: 560px;
-  }
-  
-  .goldenCircle>p, .goldenCircle>h1, .whoAmI, .aboutMe>h1, .contact>h1 {
-    font-size: 2rem;
-  }
-  
-  .goldenCircle>h1 {
-    
-  }
-  
-  .aboutMe>p {
-    font-size: 1.7rem;
-  }
-
-  .contact>h1 {
-    
-  }
-  
-  nav {
-    
-  }
-  
-  .link-home, .link-projects, .link-about, .link-contact {
-    text-shadow: 
-    -1.2px -1.2px 0 #000,  
-    1.2px -1.2px 0 #000,
-    -1.2px  1.2px 0 #000,
-    1.2px  1.2px 0 #000; 
-    font-size: 2.5rem;
-  }
-  
-  .link-home {
-    margin-left: 1150px;
-    margin-top: -30px;
-  }
-  
-  .link-projects {
-    margin-left: 1025px;
-    /* margin-top: 10px; */
-    margin-bottom: 60px;
-  }
-  
-  .link-about {
-    margin-left: 1100px;
-    margin-bottom: 20px;
-  }
-  
-  .link-contact {
-    margin-left: 1050px;
-    margin-bottom: -10px;
+@media screen and (min-width: 1440px) {
+  .nav-links {
+    top: 51vh; /* Adjust this value to place the nav-links vertically */
+    left: 79vw; /* Adjust this value to place the nav-links horizontally */
   }
 }
-.sample {
-  border: red solid 5px;
-  border: orange solid 5px;
-  border: yellow solid 5px;
-  border: green solid 5px;
-  border: blue solid 5px;
-  border: indigo solid 5px;
-  border: violet solid 5px;
-  border: hotpink solid 5px;
-  border: crimson solid 5px;
-  border: fuchsia solid 5px;
-  border: lightseagreen solid 5px;
-  border: lawngreen solid 5px;
-  border: seagreen solid 5px;
-  border: aqua solid 5px;
-  border: coral solid 5px;
-  border: rgb(203, 231, 0) solid 5px;
+@media screen and (min-width: 1920px) {
+  .nav-links {
+    top: 52vh; /* Adjust this value to place the nav-links vertically */
+    left: 78vw; /* Adjust this value to place the nav-links horizontally */
+    width: 10vw;
+    height: 43vh;
+  }
+}
 
+
+@media screen and (min-width: 2560px) {
+  .nav-links {
+    top: 52vh; /* Adjust this value to place the nav-links vertically */
+    left: 78vw; /* Adjust this value to place the nav-links horizontally */
+    width: 10vw;
+    height: 43vh;
+  }
+}
+@media screen and (min-width: 2780px) {
+  .content-container {
+    height: 100vh;
+  }
+  .nav-links {
+    top: 52vh; /* Adjust this value to place the nav-links vertically */
+    left: 78vw; /* Adjust this value to place the nav-links horizontally */
+    width: 10vw;
+    height: 30vh;
+  }
 }

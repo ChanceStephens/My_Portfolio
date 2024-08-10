@@ -1,0 +1,143 @@
+{
+    "goalGetter": {
+        "name": "Goal Getter",
+        "description": "This app calculates and displays daily story points, tracks completed vs. remaining points, and shows project status. Built with HTML, CSS, React, and JavaScript, it offers a dynamic user experience and uses RESTful APIs for full CRUD operations to manage user input, data storage, and progress tracking.",
+        "link": "",
+        "images": [
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            }
+        ]
+    },
+    "nflRoadmap": {
+        "name": "Ultimate NFL Road Trip",
+        "description": "This app features a React client-side interface for planning and documenting NFL venue visits, with Node.js managing server-side data storage and user authentication. Axios handles API requests for real-time NFL data and user content, supporting comments, images, and trip planning links.",
+        "link": "",
+        "images": [
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            }
+        ]
+    },
+    "memeGenerator": {
+        "name": "Memer's Paradise",
+        "description": "This web app uses API calls and CSS styling to randomly display meme images. Users can add their own text to the images and save them, with full CRUD operations available for editing and deleting saved memes.",
+        "link": "",
+        "images": [
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            },
+            {
+            "url": "",
+            "description": ""
+            }
+        ]
+    }
+}
