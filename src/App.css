@@ -55,7 +55,8 @@ a {
   padding: 10px;
   width: 90%;
   text-align: center;
-  background-color: rgba(198, 252, 252, 0.274);
+  /* background-color: rgba(198, 252, 252, 0.274); */
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .content-container > h1 {
@@ -75,6 +76,10 @@ span {
   font-weight: bold;
   border-bottom: solid 1px white;
   font-size: 1.4rem;
+}
+
+.launchLink {
+  font-size: 3rem;
 }
 
 .nav-links {
