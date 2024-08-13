@@ -11,7 +11,7 @@ export default function MemersParadise() {
             <Link to="/projects" className="back-to-projects-link">Back to Projects</Link>
             <h1>Memer's Paradise</h1>
             {/* <h4>Launch Memer's Paradise</h4> */}
-            <a href='https://memers-paradise.netlify.app/'>Go to Memer's Paradise</a>
+            <a className="launchLink" href='https://memers-paradise.netlify.app/'>Go to Memer's Paradise</a>
             <p><span>Technologies Used:</span> <span>Frontend:</span> React, Axios, CSS Styling  </p>
             <h4>Meme Generator</h4>
             <img className='project-image' src={memeStart} alt="Meme Start" />

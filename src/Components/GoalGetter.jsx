@@ -11,7 +11,7 @@ export default function GoalGetter() {
             <Link to="/projects" className="back-to-projects-link">Back to Projects</Link>
             <h1>Goal Getter</h1>
             {/* <h4>Launch Goal Getter</h4> */}\
-            <a href='https://goalgetter-1wab.onrender.com/'>Launch Goal Getter</a>
+            <a className="launchLink" href='https://goalgetter-1wab.onrender.com/'>Launch Goal Getter</a>
             <p><span>Technologies Used:</span> <span>Frontend:</span> React, React Router, Axios, CSS Styling <span>Backend:</span> Express, Morgan, Mongoose, dotenv, express-jwt, Routes, Models</p>
             <h4>Login Page</h4>
             <img className='project-image' src={goalGetterLogin} alt="Goal Getter Login" />
